@@ -114,7 +114,7 @@ define "Numerator":
 		exists (
 				[DiagnosticReport: "Mammography"] Mammogram
 						where ( Mammogram.effective ends 27 months or less before day of end of "Measurement Period" )
-								and Mammogram.status in { 'final', 'amended', 'corrected', 'appended' }
+								and Mammogram.status in { 'final', 'amended', 'corrected', 'appended','preliminary' }
 		)
 
 define "Denominator Exclusions":
